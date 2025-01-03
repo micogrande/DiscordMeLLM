@@ -1,0 +1,18 @@
+{
+    "model_name": "meta-llama/Llama-2-7b-chat-hf",
+    "output_dir": "../models/fine_tuned",
+    "dataset_path": "../data/fine_tune_ready/fine_tune_dataset.json",
+    "batch_size": 1,
+    "num_epochs": 3,
+    "learning_rate": 1e-5,
+    "max_length": 256,
+    "evaluation_strategy": "no",
+    "save_steps": 100,
+    "logging_dir": "../outputs/logs",
+    "gradient_accumulation_steps": 8,
+    "gradient_checkpointing": true,
+    "weight_decay": 0.0,
+    "save_total_limit": 3,
+    "fp16": true,
+    "max_grad_norm": 1.0
+}
